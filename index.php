@@ -2,9 +2,14 @@
 require('water.php');
 
 $apiKey = "Your key";
-$lat = 51.096994;
-$lng = -2.373197;
+// Water
+// $lat = 51.096994;
+// $lng = -2.373197;
 
-echo "Starting with lat: ".$lat.", lng: ".$lng."\n";
+// No Water
+$lat = 51.247651;
+$lng = 1.249331;
+
+echo "Starting with lat: ".$lat.", lng: ".$lng;
 echo "Is water: ".isItWater($lat, $lng, $apiKey);
 ?>
