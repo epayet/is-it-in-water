@@ -4,15 +4,15 @@ This app tells you whether a certain point (latitude, longitude) is in water or 
 
 ## Usage
 
+* API usage: http://is-it-in-water.eu-gb.mybluemix.net/?lat=51.511223&lng=1.090069 => `true`
 * Point in water: 51.511223,1.090069
 * Google map link: https://goo.gl/maps/AkkTEi9J9j92
 * Screenshot: ![In water example](docs/img/in-water.png?raw=true "In water example")
-* API response: http://is-it-in-water.eu-gb.mybluemix.net/?lat=51.511223&lng=1.090069 => `true`
 
+* API usage: http://is-it-in-water.eu-gb.mybluemix.net/?lat=51.680247&lng=0.604739 => `false`
 * Point NOT in water: 51.680247,0.604739
 * Google map link: https://goo.gl/maps/vfPqpCRCRFD2
 * Screenshot: ![Not in water example](docs/img/not-in-water.png?raw=true "Not in water example")
-* API response: http://is-it-in-water.eu-gb.mybluemix.net/?lat=51.680247&lng=0.604739 => `false`
 
 ## Why
 

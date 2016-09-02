@@ -11,7 +11,7 @@ if($_GET["lat"] && $_GET["lng"]) {
     $lat = $_GET["lat"];
     $lng = $_GET["lng"];
 } else {
-    echo "No args passed (latitude and longitude), try this: ?lat=51.505393&lng=-0.168609";
+    echo 'No args passed (latitude and longitude), try this one : <a href="/?lat=51.505393&lng=-0.168609">?lat=51.505393&lng=-0.168609</a>';
     return;
 }
 
