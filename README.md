@@ -18,7 +18,7 @@ This app tells you whether a certain point (latitude, longitude) is in water or 
 
 Why would you do this you may ask.
 
-Why not? More seriously, this was more like a playground to me to play around with Docker and CloudFoundry.
+Why not? More seriously, this was more like a playground to me to play around Docker and CloudFoundry.
 
 Why PHP? Stop asking questions.
 
