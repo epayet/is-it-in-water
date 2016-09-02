@@ -18,9 +18,7 @@ This app tells you whether a certain point (latitude, longitude) is in water or 
 
 Why would you do this you may ask.
 
-Why not?
-
-More seriously, this was more like a playground to me to train with Docker and CloudFoundry.
+Why not? More seriously, this was more like a playground to me to play around with Docker and CloudFoundry.
 
 Why PHP? Stop asking questions.
 
@@ -49,6 +47,8 @@ You can also use a docker container to run it if you want to avoid all the hassl
 ## TODO
 
 * Extract php-gd image: `docker build -t epayet/php-gd .`
+* Get more info from the API? Like a screenshot or something
+* Be alerted when the color blue of Google Maps water changes
 
 ## License
 
