@@ -3,10 +3,10 @@
 function isItWater($lat,$lng,$apiKey,$debug=True) {
     $GMAPStaticUrl = "https://maps.googleapis.com/maps/api/staticmap?center=".$lat.",".$lng."&size=40x40&maptype=roadmap&sensor=false&zoom=16&key=".$apiKey;
 
-	if($debug) {
-    	echo "\n\n";
-		echo $GMAPStaticUrl;
-	}
+    if($debug) {
+        echo "\n\n";
+        echo $GMAPStaticUrl;
+    }
 
     $chuid = curl_init();
     curl_setopt($chuid, CURLOPT_URL, $GMAPStaticUrl);
@@ -16,15 +16,15 @@ function isItWater($lat,$lng,$apiKey,$debug=True) {
     curl_close($chuid);
     $image = imagecreatefromstring($data);
 
-    // this is for debug to print the image	
-	if($debug) {
-    	ob_start();
-    	imagepng($image);
-    	$contents =  ob_get_contents();
-    	ob_end_clean();
-    	echo "\n\n";
-    	echo "<img src='data:image/png;base64,".base64_encode($contents)."' />";
-	}
+    // this is for debug to print the image
+    if($debug) {
+        ob_start();
+        imagepng($image);
+        $contents =  ob_get_contents();
+        ob_end_clean();
+        echo "\n\n";
+        echo "<img src='data:image/png;base64,".base64_encode($contents)."' />";
+    }
 
     // here is the test : I only test 3 pixels ( enough to avoid rivers ... )
     $hexaColor = imagecolorat($image,0,0);
@@ -42,10 +42,10 @@ function isItWater($lat,$lng,$apiKey,$debug=True) {
 
     imagedestroy($image);
 
-	if($debug) {
-    	echo "\n\n";
-    	var_dump($red,$green,$blue);
-	}
+    if($debug) {
+        echo "\n\n";
+        var_dump($red,$green,$blue);
+    }
 
     // This is changing sometimes...
     if($red == 489 && $green == 612 && $blue == 765)
