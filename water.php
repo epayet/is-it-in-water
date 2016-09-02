@@ -40,9 +40,9 @@ function isItWater($lat,$lng,$apiKey) {
     var_dump($red,$green,$blue);
     // This is changing sometimes...
     if($red == 489 && $green == 612 && $blue == 765)
-        return 1;
+        return True;
     else
-        return 0;
+        return False;
 }
 
 ?>
